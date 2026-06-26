@@ -5,9 +5,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'recruitment',
 ]
 
-ALLOWED_HOSTS = ["*"]
-
 DEBUG = False
+
+ALLOWED_HOSTS = [
+    "security-site.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
