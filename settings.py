@@ -5,6 +5,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     'recruitment',
 ]
+
+ALLOWED_HOSTS = ["*"]
+
+DEBUG = False
