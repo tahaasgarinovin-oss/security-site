@@ -1,9 +1,11 @@
 from django.contrib import admin
 from django.urls import path
-from recruitment.views import home, apply
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("سایت بالا اومد 🎉")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home),
-    path('apply/', apply),
+    path('', home),  # این مهمه 👈 صفحه اصلی
 ]
