@@ -4,13 +4,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-change-this'
 
+# production
 DEBUG = False
 
 ALLOWED_HOSTS = [
     "security-site.onrender.com",
     ".onrender.com",
     "127.0.0.1",
-    "localhost"
+    "localhost",
 ]
 
 INSTALLED_APPS = [
@@ -73,5 +74,4 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = 'static/'
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
